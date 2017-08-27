@@ -1,38 +1,17 @@
-<head>
-  <title> The Rocket Shop</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
-  <link rel="icon" href="../../favicon.ico">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../../dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+<template name="layout">
+        {{> nav}}
 
-<body>
-  {{> nav}}
-  {{> hello}}
-  {{> info}}
+        <h1>Welcome to Meteor!</h1>
+        <button class="waves-effect waves-light btn">Click me</button>
+        <p>You've pressed the button {{counter}} times.</p>
 
-   <!--  Scripts-->
-   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script src="../../bin/materialize.js"></script>
-   <script src="js/init.js"></script>
-</body>
-<template name="hello">
-  <h1>Welcome to Meteor!</h1>
-  <button class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Click me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+        <h2>Learn Meteor!</h2>
+        <ul>
+          <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+          <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+          <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+          <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+        </ul>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
 </template>
