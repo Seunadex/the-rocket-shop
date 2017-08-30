@@ -10,3 +10,14 @@ nav .nav-wrapper {
   .icon-block .material-icons {
       font-size: inherit;
   }
+
+  .loading-message {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: sans-serif;
+  }
+  
+  .sk-spinner-rotating-plane.sk-spinner {
+    background-color: #fff;
+  }
