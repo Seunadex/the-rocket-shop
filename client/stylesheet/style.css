@@ -21,3 +21,12 @@ nav .nav-wrapper {
   .sk-spinner-rotating-plane.sk-spinner {
     background-color: #fff;
   }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
