@@ -26,3 +26,8 @@ accounts-password
 accounts-ui
 accounts-facebook
 useraccounts:materialize
+accounts-github
+accounts-google
+github-config-ui
+google-config-ui
+facebook-config-ui
