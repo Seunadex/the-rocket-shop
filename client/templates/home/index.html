@@ -1,0 +1,38 @@
+<template name="homeIndex">
+  <div class="board">
+    <div class="overlay">
+          <h2>Welcome to the Rocket Shop</h2>
+          <p class="lead">
+            To the mars with you
+          </p>
+    </div>
+  </div>
+    <div class="row">
+        {{#each featured}}
+      <div class="col md12">
+        <div class="row">
+          <div class="col md12">
+            <img src="images/products/{{image}}" alt="products image" class="responsive-img"/>
+          </div>
+          <br/>
+          <div class="col md8">
+            <h6>{{name}}</h6>
+            <p><a href="#">{{vendor.name}}</a></p>
+            <p>
+              <a href="{{pathFor 'productsShow'}}">More Details</a>
+            </p>
+          </div>
+          <div class="col md4">
+            <h6>{{price}}</h6>
+            <hr/>
+            <p>
+              <a href="#" class="waves-effect waves-light btn" id="add-to-cart">
+                Add To Cart
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+</template>

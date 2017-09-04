@@ -1,0 +1,29 @@
+<template name="productsShow">
+  <div class="container" style="padding-top: 60px">
+    <div class="row">
+      <div class="col md7">
+        <img src="/images/products/{{image}}" alt="product image"/>
+      </div>
+      <div class="col md5">
+        <h1>{{name}}</h1>
+        {{#with vendor}}
+        <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
+        {{/with}}
+        <p><i>{{summary}}</i></p>
+        <p>{{description}}</p>
+
+        <div class="row">
+          <div class="col md12">
+            <h3>{{price}}</h3>
+            <hr/>
+            <p>
+              <a href="#" class="btn btn-success" id="add-to-cart">
+                Add To Cart
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
