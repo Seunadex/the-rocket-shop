@@ -5,6 +5,9 @@
             <li><a href="{{pathFor 'homeIndex'}}">Home</a></li>
             <li><a href="{{pathFor 'homeAbout'}}">About</a></li>
             <li><a href="{{pathFor 'homeContact'}}">Contact</a></li>
+            <li>{{#if isInRole 'Administrator'}}
+              <a href="#">Admin</a>
+                {{/if}}</li>
             {{> loginButtons}}
           </ul>
     
