@@ -22,3 +22,14 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 materialize:materialize
 iron:router
 pcel:loading
+accounts-password
+accounts-ui
+accounts-facebook
+useraccounts:materialize
+accounts-github
+accounts-google
+github-config-ui
+google-config-ui
+facebook-config-ui
+alanning:roles
+accounts-base
