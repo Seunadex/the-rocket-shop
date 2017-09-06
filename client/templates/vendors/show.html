@@ -1,0 +1,29 @@
+<template name="vendorsShow">
+        <div class="vendor">
+          <div class="row">
+            <div class="col m6">
+              <img class="vendor-image" src="/images/vendors/{{slug}}.jpg" alt="vendor image"/>
+            </div>
+            <div class="col m6">
+              <h1>{{name}}</h1>
+              <p>{{description}}</p>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            {{#each products}}
+              <div class="col s6 m4" style="min-height:420px">
+                <div class="thumbnail">
+                  <a href="{{pathFor 'productsShow'}}">
+                    <img src="/images/products/{{image}}" alt="product image">
+                  </a>
+                  <div class="caption">
+                    <h4><a href="{{pathFor 'productsShow'}}">{{name}}</a></h4>
+                    <p>{{summary}}</p>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </template>

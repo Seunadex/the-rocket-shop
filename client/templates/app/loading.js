@@ -1,19 +1,19 @@
-Template.loading.rendered = () => {
-    if ( ! Session.get('loadingSplash') ) {
-      this.loading = window.pleaseWait({
-        logo: '/images/Meteor-logo.png',
-        backgroundColor: '#7f8c8d',
-        loadingHtml: message + spinner
-      });
-      Session.set('loadingSplash', true); // just show loading splash once
-    }
-  };
+// Template.loading.rendered = () => {
+//     if ( ! Session.get('loadingSplash') ) {
+//       this.loading = window.pleaseWait({
+//         logo: '/images/Meteor-logo.png',
+//         backgroundColor: '#7f8c8d',
+//         loadingHtml: message + spinner
+//       });
+//       Session.set('loadingSplash', true); // just show loading splash once
+//     }
+//   };
   
-  Template.loading.destroyed = () => {
-    if ( this.loading ) {
-      this.loading.finish();
-    }
-  };
+//   Template.loading.destroyed = () => {
+//     if ( this.loading ) {
+//       this.loading.finish();
+//     }
+//   };
   
-  const message = '<p class="loading-message">Loading Message</p>';
-  const spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';
+//   const message = '<p class="loading-message">Loading Message</p>';
+//   const spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';
