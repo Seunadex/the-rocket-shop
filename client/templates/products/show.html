@@ -1,10 +1,10 @@
 <template name="productsShow">
-  <div class="container" style="padding-top: 60px">
+  <div class="vendor">
     <div class="row">
-      <div class="col md7">
-        <img src="/images/products/{{image}}" alt="product image"/>
+      <div class="col m7">
+        <img class="vendor-image" src="/images/products/{{image}}" alt="product image"/>
       </div>
-      <div class="col md5">
+      <div class="col m5">
         <h1>{{name}}</h1>
         {{#with vendor}}
         <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
@@ -13,9 +13,9 @@
         <p>{{description}}</p>
 
         <div class="row">
-          <div class="col md12">
+          <div class="col m12">
             <h3>{{price}}</h3>
-            <hr/>
+            <hr>
             <p>
               <a href="#" class="btn btn-success" id="add-to-cart">
                 Add To Cart
